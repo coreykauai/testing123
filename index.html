@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Public/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="main.js" defer></script>
+    <title>Todo app</title>
+  </head>
+  <body>
+    <main>
+      <div class="div-container green">
+        <div class="red header">
+          <h1>TODO</h1>
+          <img src="icon-moon.svg" />
+        </div>
+        <div class="user-input">
+          <span class="checkbox" aria-disabled="true"></span
+          ><input
+            type="text"
+            id="taskInput"
+            placeholder="Create a new todo..."
+          />
+          <div id="taskList"></div>
+        </div>
+        <div class="blue list-container">
+          <ul id="main-list">
+            <li id="li-1">
+              <label class="completed">
+                <span class="checkbox done red"></span>
+                <span class="text">Complete online JavaScript course</span>
+              </label>
+              <span class="removeBtn"></span>
+            </li>
+
+            <li id="li-2">
+              <label class="active">
+                <span class="checkbox"></span>
+                <span class="text">Jog around the park 3x</span>
+              </label>
+              <span class="removeBtn"></span>
+            </li>
+
+            <li id="li-3">
+              <label class="active">
+                <span class="checkbox"></span>
+                <span class="text">10 minutes meditation</span>
+              </label>
+              <span class="removeBtn"></span>
+            </li>
+
+            <li id="li-4">
+              <label class="active">
+                <span class="checkbox"></span>
+                <span class="text">Read for 1 hour</span>
+              </label>
+              <span class="removeBtn"></span>
+            </li>
+
+            <li id="li-5">
+              <label class="active">
+                <span class="checkbox"></span>
+                <span class="text">Pick up groceries</span>
+              </label>
+              <span class="removeBtn"></span>
+            </li>
+
+            <li id="li-6">
+              <label class="active">
+                <span class="checkbox"></span>
+                <span class="text">Complete Todo App on Frontend Mentor</span>
+              </label>
+              <span class="removeBtn"></span>
+            </li>
+          </ul>
+          <p id="counter"></p>
+          <button id="allButton">All</button>
+          <button id="activeButton">Active</button>
+          <button id="completeButton">Completed</button>
+          <button id="clear">Clear Completed</button>
+        </div>
+        <div class="footer"></div>
+      </div>
+    </main>
+  </body>
+</html>

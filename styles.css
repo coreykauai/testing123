@@ -1,0 +1,129 @@
+.blue {
+  border: 1px solid blue;
+}
+
+.green {
+  border: 1px solid green;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include the padding and border in an element's total width and height */
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: url(bg-desktop-light.jpg);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.div-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 35%;
+  position: relative;
+  left: 30%;
+}
+
+.header {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  height: 10%;
+}
+
+.user-input {
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+.list-container {
+  height: 45vh;
+  width: 100%;
+}
+
+button {
+  width: 5vw;
+  font-size: 10px;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Create space between content and .removeBtn */
+  padding-bottom: 15px; /* Add padding for spacing */
+}
+.checkbox {
+  border: 2px solid rgba(128, 128, 128, 0.175);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.done {
+  /* I have not gotten this to work yet */
+  /* background-image: url("./icon-check.svg"); */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the background image */
+  /* background-color: blue; */
+  background-image: linear-gradient(
+      45deg,
+      rgba(245, 70, 66, 0.75),
+      rgba(8, 83, 156, 0.75)
+    ),
+    url("./icon-check.svg");
+  cursor: pointer;
+  /* width: 20px;
+  height: 20px; */
+  /* padding-left: 20px; */
+  /* z-index: 1; */
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.text {
+  width: auto;
+}
+
+.removeBtn {
+  background-image: url("./icon-cross.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
